@@ -2,12 +2,11 @@ name: Automatic Weather Logger
 
 on:
   schedule:
-    # تشغيل السكربت كل 15 دقيقة تلقائياً
     - cron: '*/15 * * * *'
-  workflow_dispatch: # يتيح لك زر التشغيل اليدوي للتجربة في أي وقت
+  workflow_dispatch:
 
 permissions:
-  contents: write # إعطاء صلاحية لـ GitHub Actions للتعديل وحفظ ملف CSV داخل المستودع
+  contents: write
 
 jobs:
   collect-weather:
